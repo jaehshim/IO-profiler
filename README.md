@@ -2,7 +2,7 @@
 I/O command logging can be toggled via the proc filesystem.  
 Logging is **disabled by default**. To enable logging, write any value to the debug entry and then run your benchmark:
 ```
-# echo 1 > /proc/nvmev/debug
+# echo 1 > /proc/nvmev/profile
 # ./run_your_benchmark.sh
 ```
 
@@ -12,7 +12,7 @@ When logging is disabled, NVMeVirt prints all buffered log entries to the kernel
 # ./trace.sh
 
 (in another terminal)
-# echo 1 > /proc/nvmev/debug
+# echo 1 > /proc/nvmev/profile
 ```
 
 # Profiling
